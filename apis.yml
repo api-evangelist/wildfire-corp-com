@@ -1,26 +1,89 @@
 aid: wildfire-corp-com
+
 name: Wildfire
-description: 'Wildfire is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by bonfire-ventures, qed-investors) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.wildfire-corp.com/hubfs/Wildfire%20Systems%20logo/Wildfire%20Vertical%20White%20on%20Purple.jpg
+
+description: 'Wildfire provides a white‑label loyalty, rewards, and consumer insights platform for banks and large financial technology firms. It offers cashback, coupons, and amplified card benefits, leveraging a network of over 50,000 merchant programs and AI‑driven shopper insights to deliver relevant offers and commerce media revenue.'
+
 url: https://raw.githubusercontent.com/api-evangelist/wildfire-corp-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
-- Company
-apis: []
+- Loyalty
+- Rewards
+- Consumer Insights
+- Commerce Media
+- Merchant Network
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+common:
+- type: LLMsTxt
+  url: llms/wildfire-corp-com-llms.txt
+- type: Hosts
+  url: hosts/wildfire-corp-com-hosts.yml
+- type: Vendors
+  url: vendors/wildfire-corp-com-vendors.yml
+- type: TermsOfService
+  url: https://support.wildfire-corp.com/migration/for-wildlink-users/terms-of-use
+- type: Support
+  url: https://support.wildfire-corp.com/tickets-view?offset=0
+- type: PrivacyPolicy
+  url: https://support.wildfire-corp.com/for-wildlink-users/privacy-policy
+- type: Pricing
+  url: https://www.wildfire-corp.com/pricing
+- type: Newsroom
+  url: https://www.wildfire-corp.com/news
+- type: Blog
+  url: https://www.wildfire-corp.com/blog
+- type: DomainSecurity
+  url: security/wildfire-corp-com-domain-security.yml
+- type: Website
+  url: https://wildfire-corp.com
+
+apis: []
+
 x-backed-by:
 - bonfire-ventures
 - qed-investors
-common:
-- type: Website
-  url: https://wildfire-corp.com
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-22'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://wildfire-corp.com/mcp
+    status: 403
+  - url: https://ai.wildfire-corp.com/mcp
+    status: 403
+  - url: https://support.wildfire-corp.com/mcp
+    status: 403
+  - url: https://wildfire-corp.com
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
