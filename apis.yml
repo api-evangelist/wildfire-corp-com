@@ -1,0 +1,26 @@
+aid: wildfire-corp-com
+name: Wildfire
+description: 'Wildfire is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
+  backed by bonfire-ventures, qed-investors) and added to the network as a stub for full-pipeline profiling.'
+url: https://raw.githubusercontent.com/api-evangelist/wildfire-corp-com/refs/heads/main/apis.yml
+x-type: company
+x-source: harvest:vc-portfolio
+x-tier: stub
+x-tier-reason: harvest
+specificationVersion: '0.20'
+created: '2026-10-21'
+modified: '2026-10-21'
+tags:
+- Company
+apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
+x-backed-by:
+- bonfire-ventures
+- qed-investors
+common:
+- type: Website
+  url: https://wildfire-corp.com
